@@ -1,0 +1,13 @@
+public class Aluno extends Pessoa {
+    String matricula;
+
+    public Aluno(String nome, int idade, String matricula) {
+        super(nome, idade);
+        this.matricula = matricula;
+    }
+
+    public void exibirInfo() {
+        super.exibirInfo();
+        System.out.println("Matricula " + matricula);
+    }
+}
